@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+results/
+figures/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.log
+*.npz
+.aider*

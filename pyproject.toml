@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twinlinepinn"
+version = "0.1.0"
+description = "Physics-informed neural network reference package for lossy telegrapher equations and transmission-line digital twin research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Mohammad (Behdad) Jamshidi", email = "mohammad.jamshidi@alumni.uts.edu.au" }
+]
+keywords = [
+  "physics-informed neural networks",
+  "PINN",
+  "telegrapher equations",
+  "transmission line",
+  "digital twin",
+  "dynamic line rating"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dashboard = ["plotly>=5", "streamlit>=1.30"]
+dev = ["build>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/MBJamshidi/TwinLinePINN"
+Repository = "https://github.com/MBJamshidi/TwinLinePINN"
+
+[tool.setuptools]
+packages = ["twinlinepinn"]
+py-modules = [
+  "fdtd_reference",
+  "pinn_core",
+  "run_forward",
+  "run_inverse",
+  "make_figures",
+  "environmental_coupling",
+  "digital_twin_dashboard",
+  "gradcheck",
+  "main"
+]

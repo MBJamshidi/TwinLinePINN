@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "TwinLinePINN: Physics-Informed Neural Network Reference Software for Lossy Telegrapher Equations"
+message: "If you use this software, please cite the associated 2026 Computation paper."
+type: software
+authors:
+  - family-names: Jamshidi
+    given-names: "Mohammad (Behdad)"
+    orcid: "https://orcid.org/0000-0002-5312-6497"
+repository-code: "https://github.com/MBJamshidi/TwinLinePINN"
+license: MIT
+date-released: "2026-07"
+preferred-citation:
+  type: article
+  title: "A Physics-Informed Neural Network Framework for Lossy Telegrapher Equations with a Formulated Multi-Physics Environmental Extension"
+  authors:
+    - family-names: Jamshidi
+      given-names: "Mohammad (Behdad)"
+      orcid: "https://orcid.org/0000-0002-5312-6497"
+  journal: "Computation"
+  year: 2026
+  month: 7
