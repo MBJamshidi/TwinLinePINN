@@ -1,5 +1,11 @@
 # TwinLinePINN
 
+> **Citation notice:** If you use TwinLinePINN in research, publications, or
+> derivative software, please cite: Mohammad (Behdad) Jamshidi, **"A
+> Physics-Informed Neural Network Framework for Lossy Telegrapher Equations
+> with a Formulated Multi-Physics Environmental Extension"**, *Computation*,
+> July 2026.
+
 Open-access reference software for physics-informed neural network modelling of
 lossy transmission lines.
 
