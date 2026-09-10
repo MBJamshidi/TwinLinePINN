@@ -1,19 +1,20 @@
 # TwinLinePINN
 
 > **Citation notice:** If you use TwinLinePINN in research, publications, or
-> derivative software, please cite: Mohammad (Behdad) Jamshidi, **"A
-> Physics-Informed Neural Network Framework for Lossy Telegrapher Equations
-> with a Formulated Multi-Physics Environmental Extension"**, *Computation*,
-> July 2026.
+> derivative software, please cite: Jamshidi M. A Physics-Informed Neural
+> Network Framework for Lossy Telegrapher Equations with a Formulated
+> Multi-Physics Environmental Extension. *Computation*. 2026; 14(9):208.
+> https://doi.org/10.3390/computation14090208
 
 Open-access reference software for physics-informed neural network modelling of
 lossy transmission lines.
 
 This package accompanies the paper:
 
-> Mohammad (Behdad) Jamshidi, **A Physics-Informed Neural Network Framework for
-> Lossy Telegrapher Equations with a Formulated Multi-Physics Environmental
-> Extension**, *Computation*, July 2026.
+> Jamshidi M. A Physics-Informed Neural Network Framework for Lossy Telegrapher
+> Equations with a Formulated Multi-Physics Environmental Extension.
+> *Computation*. 2026; 14(9):208.
+> https://doi.org/10.3390/computation14090208
 
 TwinLinePINN is designed as a readable scientific implementation. It keeps the
 core numerical method transparent: pure NumPy neural-network training,
@@ -152,11 +153,25 @@ forward + inverse + figure pipeline can take more than 10 minutes.
 
 If this software supports your research, please cite:
 
-```text
-Mohammad (Behdad) Jamshidi,
-"A Physics-Informed Neural Network Framework for Lossy Telegrapher Equations
-with a Formulated Multi-Physics Environmental Extension",
-Computation, July 2026.
+> Jamshidi M. A Physics-Informed Neural Network Framework for Lossy Telegrapher
+> Equations with a Formulated Multi-Physics Environmental Extension.
+> *Computation*. 2026; 14(9):208.
+> [https://doi.org/10.3390/computation14090208](https://doi.org/10.3390/computation14090208)
+
+```bibtex
+@Article{computation14090208,
+AUTHOR = {Jamshidi, Mohammad (Behdad)},
+TITLE = {A Physics-Informed Neural Network Framework for Lossy Telegrapher Equations with a Formulated Multi-Physics Environmental Extension},
+JOURNAL = {Computation},
+VOLUME = {14},
+YEAR = {2026},
+NUMBER = {9},
+ARTICLE-NUMBER = {208},
+URL = {https://www.mdpi.com/2079-3197/14/9/208},
+ISSN = {2079-3197},
+ABSTRACT = {This paper develops a physics-informed neural network (PINN) framework for the lossy telegrapher equations and presents a coupled IEEE 738 thermal balance formulation intended as a structural blueprint for environmentally aware transmission-line digital twins. The baseline electromagnetic PINN maps (x,t)↦(V̂,Î) and is empirically validated against a finite-difference time-domain (FDTD) reference solver. An augmented parametric framework Nθ:(x,t,e)↦(V̂,Î,T̂line) is mathematically derived, wherein the ambient vector e modulates a temperature-dependent resistance R′(Tline) and couples to the telegrapher residuals via a non-linear thermal balance residual rT. Two further constraints, a sag-tension consistency residual rS and a dynamic line rating (DLR) one-sided penalty rDLR, are formulated for completeness but are explicitly designated as architectural extension hooks running at zero weight (ωth=ωsag=ωdlr=0) within the reported microscale numerical benchmarks. Consequently, the empirical validation presented herein strictly concerns the baseline electromagnetic telegrapher PINN. The numerical results demonstrate robust L2 field convergence against FDTD reference data, highly structured error accumulation along physical characteristic curves, and reliable recovery of strongly observable parameters (L′,C′) from sparse, noisy terminal measurements. Conversely, the recovery of loss parameters (R′,G′) exhibits a severe structural weak identifiability that precisely matches the analytical predictions of a comprehensive Fisher Information Matrix analysis. The core contributions of this work are primarily methodological: (i) a dimensionally consistent, corrected residual formulation for the lossy telegrapher equations; (ii) an explicit positioning of the proposed multi-physics framework within the parametric PINN literature; (iii) a Fisher information identifiability diagnostic illustrating the near-degeneracy of baseline parameter estimation; and (iv) a clean algorithmic separation of forward training, inverse parameter identification, and prospective online updates.},
+DOI = {10.3390/computation14090208}
+}
 ```
 
 A machine-readable citation file is provided in `CITATION.cff`.
